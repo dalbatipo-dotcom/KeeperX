@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Download project
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Java
         uses: actions/setup-java@v6
@@ -20,7 +20,7 @@ jobs:
           java-version: "17"
 
       - name: Install Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Prepare Android SDK
         run: |
